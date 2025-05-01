@@ -1,0 +1,14 @@
+parameters:
+    level: max
+    ignoreErrors:
+        - '#Access to an undefined property App\\Models\\[a-zA-Z0-9_]+::\$[a-zA-Z0-9_]+#'
+        - '#Cannot access property \$[a-zA-Z0-9_]+ on mixed#'
+        - '#Call to an undefined (static )?method App\\Models\\[a-zA-Z0-9_]+::(where|whereIn|whereBetween|whereHas|whereNull|whereNotNull|with|has|find|findOrFail|first|firstOrFail|create|update|delete|get|paginate|count|orderBy|select|pluck|join|distinct|groupBy)\(#'
+        - '#Cannot call method [a-zA-Z0-9_]+\(\) on mixed#'
+        - '#Parameter \#[0-9]+ \$[a-zA-Z0-9_]+ of (method|function) .* expects .*, mixed given#'
+        - '#Call to an undefined method Illuminate\\Contracts\\Auth\\Factory::user\(\)#'
+        - '#PHPDoc tag @var for variable \$[a-zA-Z0-9_]+ contains generic class Illuminate\\Support\\Collection but does not specify its types#'
+        - '#Class .* uses generic trait .* but does not specify its types: .*#'
+        - '#Property App\\Models\\[a-zA-Z0-9_]+::\$[a-zA-Z0-9_]+ type has no value type specified in iterable type array#'
+    excludePaths:
+        - tests
